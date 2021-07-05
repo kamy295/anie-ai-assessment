@@ -108,3 +108,10 @@ p{
 #upload-box:hover{
     transform: scale(1.1);
 }
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 600px) {
+    #left{
+        width: 14vw;
+    }
+}

@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+/* Variables for Color */
+:root{
+    --text: #0E0E0E;
+    --below: #F3F4F6;
+    --left: #FAFAFA;
+    --nav: #FFFFFF;
+    --leftShadow: #E7E7E7;
+    --videos: #7E90A3;
+}
+
 * {
     margin: 0;
     padding: 0;
-    color: #0E0E0E;
+    color: var(--text);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -16,11 +26,11 @@ body{
 
 nav {
     height: 15vh;
-    background-color: #FFFFFF;
+    background-color: var(--nav);
 }
 
 .below {
-    background-color: #F3F4F6;
+    background-color: var(--below);
     height: 90vh;
     width: 92vw;
     float: right;
@@ -36,8 +46,8 @@ nav {
     position: absolute;
     top: 0;
      z-index: 100;
-     background-color: #FAFAFA;
-     box-shadow: 10px 0 10px 4px #E7E7E7;
+     background-color: var(--left);
+     box-shadow: 10px 0 10px 4px var(--leftShadow);
 }
 
 img {
@@ -53,14 +63,14 @@ img {
 input {
     width: 65vw;
     height: 6vh;
-    border: 1px solid #F3F4F6;
-    background-color: #FAFAFA;
+    border: 1px solid var(--below);
+    background-color: var(--left);
     border-radius: 20px;
 }
 
 h2 {
     padding: 50px;
-    color: #7E90A3
+    color: var(--videos);
 }
 
 #place {
@@ -82,7 +92,7 @@ img:hover{
     height: 8vh;
     width: 50%;
     padding-top: 25px;
-    border-top: 1px solid #F3F4F6;
+    border-top: 1px solid var(--below);
 }
 
 p{
@@ -97,7 +107,7 @@ p{
     float: right;
     height: 160px;
     width: 160px;
-    background-color: #FAFAFA;
+    background-color: var(--left);
     padding: 10px;
     display: flex;
     align-items: center;
